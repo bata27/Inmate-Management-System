@@ -41,7 +41,7 @@ import java.util.Scanner;
 public class CorrectionalFacilitySystem extends Application {
 
     // Database connection parameters
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/correctional_facility_dba";
+    private static final String DB_URL = "jdbc:mysql://localhost:****/correctional_facility_dba";
     private static final String DB_USERNAME = "****";
     private static final String DB_PASSWORD = "**********";
 
@@ -51,7 +51,7 @@ public class CorrectionalFacilitySystem extends Application {
        primaryStage.setTitle("Correctional Facility Management System");
 
 // Load and set the logo image
-       Image logoImage = new Image("file:///C:/Users/Limpho%20Mokone/Documents/Bata27/PRISONS%20B/correctionalmanagement/justice.png");  
+       Image logoImage = new Image("file:///C:/Users/**************/Documents/Bata27/PRISONS%20B/correctionalmanagement/justice.png");  
        ImageView logo = new ImageView(logoImage);
        logo.setFitHeight(40);  // Adjust logo height as needed
        logo.setPreserveRatio(true);
@@ -359,7 +359,7 @@ private void openAddInmateDialog(TableView<Inmate> inmateTable) {
 
             // Insert new inmate into database
             String insertQuery = "INSERT INTO inmates (full_name, case_number, date_of_birth, facility, nationality, status,) VALUES (?, ?, ?)";
-            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/correctional_facility_dba", "****", "*******");
+            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:*****/correctional_facility_dba", "****", "*******");
                  PreparedStatement stmt = conn.prepareStatement(insertQuery)) {
                 stmt.setString(1, name);
                 stmt.setString(2, caseNumber);                
@@ -610,7 +610,7 @@ private void openBookVisitDialog() {
         String query = "INSERT INTO visits (visitor_name, visitor_contact, visitor_id_number, inmate_id, visit_date, visit_time, visit_tag_number, created_at, updated_at) "
                      + "VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
 
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/correctional_facility_dba", "****", "******");
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:*****/correctional_facility_dba", "****", "******");
              PreparedStatement pstmt = conn.prepareStatement(query)) {
 
             pstmt.setString(1, visitorName);
@@ -768,8 +768,8 @@ private void showAlert(String message) {
 
         // Sample data (Replace with actual data from your database)
         ObservableList<CourtRollEntry> courtRollData = FXCollections.observableArrayList(
-            new CourtRollEntry("C1234", "Phako vs Jane", "Civil", "2025-01-15 10:00", "Courtroom 1", "Judge Mokone"),
-            new CourtRollEntry("C5678", "State vs Thabane", "Criminal", "2025-01-16 14:00", "Courtroom 2", "Magistrate Malikete")
+            new CourtRollEntry("C1234", "Phako vs Jane", "Civil", "2025-01-15 10:00", "Courtroom 1", "Judge*****"),
+            new CourtRollEntry("C5678", "State vs Thabane", "Criminal", "2025-01-16 14:00", "Courtroom 2", "Magistrate *****")
         );
 
         tableView.setItems(courtRollData);
@@ -814,7 +814,7 @@ private void showAlert(String message) {
         HBox header = new HBox(10);
         header.setStyle("-fx-padding: 10; -fx-background-color: #2c3e50; -fx-alignment: center;");
 
-        Image logoImage = new Image("file:///C:/Users/Limpho%20Mokone/Documents/Bata27/PRISONS%20B/correctionalmanagement/justice.png");  
+        Image logoImage = new Image("file:///C:/Users/*********/Documents/Bata27/PRISONS%20B/correctionalmanagement/justice.png");  
        ImageView logo = new ImageView(logoImage);
        logo.setFitHeight(45);  // Adjust logo height as needed
        logo.setPreserveRatio(true);
@@ -832,7 +832,7 @@ private void showAlert(String message) {
     footer.setStyle("-fx-padding: 10; -fx-background-color: #34495e; -fx-alignment: center;");
 
     // Add the logo image
-    Image logoImage = new Image("file:///C:/Users/Limpho%20Mokone/Documents/Bata27/PRISONS%20B/correctionalmanagement/Bata27.png");
+    Image logoImage = new Image("file:///C:/Users/************/Documents/Bata27/PRISONS%20B/correctionalmanagement/Bata27.png");
 ImageView logo = new ImageView(logoImage);
     logo.setFitHeight(30);  // Adjust logo height as needed
     logo.setPreserveRatio(true);
@@ -855,7 +855,7 @@ ImageView logo = new ImageView(logoImage);
 
 // Helper method to create social media links with icons
 private Hyperlink createSocialMediaLink(String url, String iconPath) {
-    Image iconImage = new Image("file:///C:/Users/Limpho%20Mokone/Documents/Bata27/PRISONS%20B/correctionalmanagement/icons/" + iconPath);
+    Image iconImage = new Image("file:///C:/Users/*******8/Documents/Bata27/PRISONS%20B/correctionalmanagement/icons/" + iconPath);
 ImageView icon = new ImageView(iconImage);
     icon.setFitHeight(20);  // Adjust icon size as needed
     icon.setPreserveRatio(true);
