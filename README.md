@@ -1,5 +1,5 @@
 # Inmate-Management-System
-Inmate Management System
+
 This Inmate Management System is a Java-based application designed to efficiently manage inmate records in correctional facilities. It provides a user-friendly interface for administrators to handle inmate details, monitor records,view court rolls and generate reports, ensuring secure and accurate data management.
 
 Features
