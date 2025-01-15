@@ -46,6 +46,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 Contact
 For questions or support, feel free to reach out:
-Email: frannlimok@gmail.com
+Email: franlimok@gmail.com
+LinkedIn: www.linkedin.com/in/mokone-limpho-b21318102
 Phone: +266 67142889
 GitHub: bata27
